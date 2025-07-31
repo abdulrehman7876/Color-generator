@@ -10,6 +10,7 @@ let rem;
 let myHexCode = "0123456789abcdef";
 let hexCode = "ffffff";
 let string = "";
+let start;
 
 changeColor = ()=>{
     string = "#";
