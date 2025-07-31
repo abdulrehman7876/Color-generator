@@ -1,4 +1,5 @@
 color = document.querySelector(".color");
+colorCode = document.querySelector(".color-code");
 box = document.querySelector(".box");
 background = document.querySelector(".main");
 button = document.querySelector(".button");
