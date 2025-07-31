@@ -23,13 +23,24 @@ changeColor = ()=>{
     background.style.backgroundColor = `${string}`;
     icon.style.color = "black";
     string = "";
-} 
+}
+addAnimation = () =>{
+    colorCode.style.animation = 'left 2s linear infinite alternate';
+}
+removeAnimation = () =>{
+    colorCode.style.animation = '';
+    clearInterval(start);
+}
 changeColor();
 button.addEventListener('mouseover', ()=>{
     button.style.cursor = "pointer";
 })
 button.addEventListener('click', ()=>{
-    changeColor();
+    addAnimation();
+    start = setInterval(()=>{
+        changeColor();
+        removeAnimation();
+    },2000)
 })
 icon.addEventListener('click', ()=>{
     navigator.clipboard.writeText(color.innerText);
