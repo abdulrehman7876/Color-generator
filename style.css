@@ -46,6 +46,25 @@ html, body{
     height: 20px;
     width: 20px;
 }
+@keyframes left {
+    0% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: -43vw 0;
+        background-color: red;
+    }
+    80%{
+        translate: 43vw 0;
+        background-color: green;
+    }
+
+    100% {
+        translate: 0 0;
+        background-color: blue;
+    }
+}
 .button{
     margin-top: 1rem;
     border: none;
