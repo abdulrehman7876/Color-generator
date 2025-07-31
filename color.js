@@ -11,7 +11,6 @@ let rem;
 let myHexCode = "0123456789abcdef";
 let hexCode = "ffffff";
 let string = "";
-let start;
 
 changeColor = ()=>{
     string = "#";
@@ -31,15 +30,14 @@ addAnimation = () =>{
 }
 removeAnimation = () =>{
     colorCode.style.animation = '';
-    clearInterval(start);
 }
 changeColor();
 button.addEventListener('mouseover', ()=>{
     button.style.cursor = "pointer";
 })
-button.addEventListener('click', ()=>{
+button.addEventListener('click' , ()=>{
     addAnimation();
-    start = setInterval(()=>{
+    setTimeout(()=>{
         changeColor();
         removeAnimation();
     },2000)
