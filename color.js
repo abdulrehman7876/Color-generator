@@ -26,7 +26,7 @@ changeColor = ()=>{
     string = "";
 }
 addAnimation = () =>{
-    colorCode.style.animation = 'left 2s linear infinite alternate';
+    colorCode.style.animation = 'left 1s linear infinite alternate';
 }
 removeAnimation = () =>{
     colorCode.style.animation = '';
@@ -40,7 +40,7 @@ button.addEventListener('click' , ()=>{
     setTimeout(()=>{
         changeColor();
         removeAnimation();
-    },2000)
+    },1000)
 })
 icon.addEventListener('click', ()=>{
     navigator.clipboard.writeText(color.innerText);
