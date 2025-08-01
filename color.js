@@ -23,6 +23,7 @@ changeColor = ()=>{
     color.innerText = `${string}`;
     background.style.backgroundColor = `${string}`;
     icon.style.color = "black";
+    colorCode.style.backgroundColor = `${string}`;
     string = "";
 }
 addAnimation = () =>{
